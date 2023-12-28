@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(29, 118, 47), rgb(132, 12, 46));
+    background-attachment: fixed;
+    font-family: "Carattere-Regular", sans-serif;
+    cursor: url('sapin.png'), auto;
+}
+
+.gif {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #6ae94d;
+    margin: 15px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #459732;
+    margin: 15px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gif {
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .yes-btn {
+        margin-left: 0;
+    }
+
+    .no-btn {
+        margin-right: 0;
+    }
+}
